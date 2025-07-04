@@ -370,8 +370,8 @@ def main():
     
     # Header
     st.markdown("""
-    # 🏠 Real ML-based Bangalore Airbnb Price Predictor
-    **Powered by actual Machine Learning models - not hardcoded rules!**
+    # 🏠 ML-based Bangalore Airbnb Price Predictor
+    
     
     This system uses trained Random Forest, Gradient Boosting, and Linear Regression models to predict Airbnb prices based on real property features.
     """)
@@ -432,7 +432,7 @@ def main():
                 st.success("🎉 Models trained successfully!")
                 
                 # Show model performance
-                st.subheader("🏆 Model Performance (Real ML Metrics)")
+                st.subheader("🏆 Model Performance")
                 
                 perf_data = []
                 for name, result in results.items():
@@ -466,7 +466,7 @@ def main():
                     st.write("**This shows what features the ML model considers most important for price prediction.**")
     
     elif page == "💰 ML Price Prediction":
-        st.header("💰 Real ML-based Price Prediction")
+        st.header("ML-based Price Prediction")
         
         if not st.session_state.predictor.is_trained:
             st.warning("⚠️ Please train the ML models first!")
